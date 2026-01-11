@@ -2,15 +2,27 @@
   "name": "Audify",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "bunchee --watch",
+    "build": "bunchee"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sunil Nune",
   "license": "ISC",
   "packageManager": "pnpm@10.28.0",
   "devDependencies": {
-    "sonner": "^2.0.7"
+    "@types/node": "^25",
+    "@types/react": "^19",
+    "bunchee": "^6",
+    "react": "^19",
+    "react-dom": "^19",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "react": "^19",
+    "react-dom": "^19",
+    "sonner": "^2"
   }
 }
